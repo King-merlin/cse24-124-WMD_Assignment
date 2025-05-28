@@ -149,13 +149,13 @@ body{
 .about {
     position: relative;
     width: 100%;
-    min-height: auto; /* Changed from min-width to min-height */
-    padding: 40px 20px; /* Reduced padding for mobile */
+    min-height: auto; 
+    padding: 40px 20px; 
     display: inline-block;
-    flex-direction: column; /* Stack vertically on mobile */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.7); /* Added for better readability */
+    background: rgba(0,0,0,0.7); 
     min-height: 80vh;
     justify-content: space-between;
     align-items: center;
@@ -167,19 +167,18 @@ body{
 
 .about .contentBx {
     position: relative;
-    width: 100%; /* Full width on mobile */
-    margin: 20px 0; /* Adjusted margin */
+    width: 75%; 
+    margin: 20px 0; 
     padding: 20px;
     box-sizing: border-box;
     z-index: 1;
-    width: 50%;
 }
 
 .about .contentBx h2 {
-    font-size: 2rem; /* Reduced size for mobile */
+    font-size: 2rem; 
     font-weight: 700;
     color: #fff;
-    text-align: center; /* Center on mobile */
+    text-align: center; 
     margin-bottom: 20px;
     font-size: 3em;
     margin-bottom: 20px;
@@ -190,12 +189,12 @@ body{
 }
 
 .about .contentBx p {
-    width: 100%; /* Full width on mobile */
-    max-width: 100%; /* Override the 600px limit */
-    text-align: left; /* Changed from justify for mobile */
+    width: 100%; 
+    max-width: 100%; 
+    text-align: left; 
     color: #dbd9d9;
-    font-size: 1rem; /* Base mobile size */
-    line-height: 1.6; /* Better readability */
+    font-size: 1rem; 
+    line-height: 1.6; 
     margin-bottom: 20px;
 }
 
@@ -203,31 +202,31 @@ body{
 .about .contentBx a {
     display: inline-block;
     padding: 12px 24px;
-    margin: 15px auto; /* Centered on mobile */
+    margin: 15px auto;
     border: 1px solid #313131;
     text-decoration: none;
     font-weight: 500;
     border-radius: 5px;
     color: #fff;
     letter-spacing: 1px;
-    background: rgba(255,255,255,0.1); /* Better visibility */
+    background: rgba(255,255,255,0.1); 
     text-align: center;
-    width: auto; /* Auto width for button */
+    width: auto; 
     transition: all 0.3s ease;
 }
 
 .about .contentBx a:hover,
-.about .contentBx a:focus { /* Added focus state for accessibility */
+.about .contentBx a:focus { 
     background: #ffffff;
     border: none;
     color: #131313;
     box-shadow: 0px 0px 10px #dbd9d9;
-    transform: scale(1.05); /* Subtle grow effect */
+    transform: scale(1.05); 
 }
 
 
 
-/* ===== FOOTER ===== */
+
 
 
 
