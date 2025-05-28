@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="contact.css">
+        
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Wuthering Waves</a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fas fa-bars"></i></label>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Characters.html" class="nav-link">Resonators</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact us.html" class="nav-link">Feedback</a></li>
+            </ul>
+        </header>
+
+
+        <!-- ========================== CONTACT SECTION ========================== -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="https://formsubmit.co/galacticstrokes@gmail.com" method="POST">
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" placeholder="  " required>
+                            <p>your name</p>
+                            <label for="name">your name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" required>
+                            <p>email</p>
+                            <label for="email">your email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" required></textarea>
+                            <p>message</p>
+                            <label for="message">your message</label>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p><i class="fas fa-envelope"></i> galacticstrokes@gmail.com <br>wutheringwaves_ensupport@kurogame.com</p>
+                    <p><i class="fas fa-phone"></i> +267 756 539 09</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Guangzhou , China
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/WutheringWaves"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Wuthering_Waves"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/wutheringwaves/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/wutheringwaves"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Wuthering Waves</a>
+                    <p>Join our community of Rovers</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Characters.html">Resonators</a></li>
+                        <li><a href="news.html">Events</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Wuthering_Waves" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/WutheringWaves" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wutheringwaves/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/wutheringwaves" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.youtube.com/@WutheringWaves" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wuthering Waves Fan Site. Not affiliated with Kuro Games.</p>
+            </div>
+        </footer>
+        <script>
+           //==========---------------Highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get current page and decode URI components
+            const currentPage = decodeURIComponent(location.pathname.split('/').pop()) || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                // Decode href attribute to handle spaces
+                const linkPage = decodeURIComponent(link.getAttribute('href').split('/').pop());
+                
+                // Check for matches (including contact page)
+                if (linkPage === currentPage || 
+                (currentPage === '' && linkPage === 'index.html') ||
+                (link.getAttribute('href') === location.hash)) {
+                    link.classList.add('active');
+                }
+                
+                // Mobile menu close on click
+                link.addEventListener('click', function() {
+                    document.getElementById('toggler').checked = false;
+                });
+            });
+        });
+        </script>
+    </body>
+   
+</html>

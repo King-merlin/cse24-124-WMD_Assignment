@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WUWA</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Wuthering Waves</a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fas fa-bars"></i></label>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Characters.html" class="nav-link">Resonators</a></li>
+                <li class="nav-item"><a href="news.html" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link about-link" aria-label="Scroll to About section">About Us</a></li>
+                <li class="nav-item"><a href="contact us.html" class="nav-link">Feedback</a></li>
+            </ul>
+        </header>
+        
+        <!-- Home Banner-->
+        <div class="banner">
+            <div class="bg">
+                <img src="images/wuwa home.gif" alt="">
+                <div class="content">
+                    <h2><br>
+                        WELCOME TO WHERE WAVES WUTHER</h2>
+                    <p><br>Welcome fellow Rover,  begin your journey by beating the shit out of crownless while you can, he'll cook you at lv90</p>
+                    <a href="https://wutheringwaves.kurogames.com/en/" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!--slider-->
+
+        <div class="slider">
+            <div class="box">
+                <h2>RECOMMENED CHARACTERS</h2>
+                    <a href="https://www.prydwen.gg/wuthering-waves/characters/jinhsi">
+                        <img src="images/jinshi.png" alt="">
+                    </a>
+                    <a href="https://www.prydwen.gg/wuthering-waves/characters/zani">
+                        <img src="images/wuwa-zani.png" alt="">
+                    </a>
+                    <a href="https://www.prydwen.gg/wuthering-waves/characters/jiyan">
+                        <img src="images/Yinlin-char.png" alt="">
+                    </a>
+                    <a href="https://www.prydwen.gg/wuthering-waves/characters/jiyan">
+                        <img src="images/verina-char.png" alt="">
+                    </a>
+                    <a href="https://www.prydwen.gg/wuthering-waves/characters/the-shorekeeper">
+                        <img src="images/shorekeeper-card.png" alt="">
+                    </a>
+            </div>
+
+        </div>
+        
+        <!--about us-->
+        <section id="about" class="about">
+            <div class="contentBx">
+                <h2><br>About Us</h2>
+                <p>Wuthering Waves is a groundbreaking open-world action RPG from Kuro Games, creators of Punishing: Gray Raven. Set in a post-apocalyptic world reshaped by the Lament disaster, you awaken as Rover—a amnesiac traveler gifted with unique resonance abilities. Explore the vast landscapes of *Solaris-3*, battle mysterious Tacet Discords, and uncover the secrets of a civilization lost to time.
+                </p>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Wuthering_Waves" class="btn">Read more</a>
+
+            
+        </section>
+
+        <!-- New Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Wuthering Waves</a>
+                    <p>Join our community of Rovers</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Characters.html">Resonators</a></li>
+                        <li><a href="news.html">Events</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact us.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Wuthering_Waves" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/WutheringWaves" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wutheringwaves/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.gg/wutheringwaves" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.youtube.com/@WutheringWaves" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wuthering Waves Fan Site. Not affiliated with Kuro Games.</p>
+            </div>
+        </footer>
+         <script>
+        // Sticky Header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        // Mobile Menu Toggle
+        const toggler = document.getElementById('toggler');
+        const nav = document.querySelector('.nav');
+        
+        toggler.addEventListener('change', function() {
+            nav.classList.toggle('active', this.checked);
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggler.checked = false;
+                nav.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav a");
+            navLinks.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add("active");
+                }
+            });
+        });
+        //Highlighting
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const aboutLink = document.querySelector('.about-link');
+            let currentPage = location.pathname.split('/').pop() || 'index.html';
+            
+            // Initialize highlights
+            function updateHighlights() {
+                // Clear all active states first
+                navLinks.forEach(link => {
+                    link.classList.remove('active', 'section-active');
+                });
+                
+                // Standard page highlighting
+                if (currentPage === 'index.html') {
+                    // Check if we're viewing a section
+                    if (isElementInViewport(document.getElementById('about'))) {
+                        aboutLink.classList.add('section-active');
+                    } else {
+                        document.querySelector('.nav-link[href="index.html"]').classList.add('active');
+                    }
+                } else {
+                    // Highlight current page for other pages
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href').includes(currentPage)) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            }
+            
+            // Scroll detection with debounce
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    if (currentPage === 'index.html') {
+                        updateHighlights();
+                    }
+                }, 100);
+            });
+            
+            // Hash change detection
+            window.addEventListener('hashchange', updateHighlights);
+            
+            // Initial setup
+            updateHighlights();
+            
+            // Helper function to check if element is in viewport
+            function isElementInViewport(el) {
+                if (!el) return false;
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= window.innerHeight * 0.3 &&
+                    rect.bottom >= window.innerHeight * 0.3
+                );
+            }
+            
+            // Mobile menu close
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    document.getElementById('toggler').checked = false;
+                    currentPage = location.pathname.split('/').pop() || 'index.html';
+                    setTimeout(updateHighlights, 100); // Allow time for navigation
+                });
+            });
+        });
+        </script>
+   
+        <script src="script.js" defer></script>
+
+    </body>  
+</html>
